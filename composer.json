@@ -1,0 +1,29 @@
+{
+    "name": "zheng-ze-hui/think-zauth",
+    "description": "An authorization library for Thinkphp6",
+    "type": "library",
+    "keywords": [
+        "thinkphp",
+        "permission",
+        "authorization",
+        "auth",
+        "zauth"
+    ],
+    "homepage": "https://github.com/zheng-ze-hui/think-zauth",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Zheng Hui",
+            "email": "2366690@qq.com"
+        }
+    ],
+    "require": {
+        "topthink/framework": "^6.0.0",
+        "topthink/think-migration": "^3.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "zauth\\": "src/"
+        }
+    }
+}
