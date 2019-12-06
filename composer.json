@@ -1,5 +1,5 @@
 {
-    "name": "think/think-zauth",
+    "name": "zehui/think-zauth",
     "description": "An authorization library for Thinkphp6",
     "type": "library",
     "keywords": [
