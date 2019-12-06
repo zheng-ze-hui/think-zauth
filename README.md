@@ -9,6 +9,9 @@ think-zauth 是一个专为 ThinkPHP6.0 打造的权限控制库。
 
 > composer update zheng-ze-hui/think-zauth @dev
 
+## 发布配置文件和数据库迁移文件
+> php think zauth:publish
+
 ## 执行迁移工具
 > php think migrate:run
 //此时数据库便创建了prefix_rules表.

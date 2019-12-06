@@ -24,6 +24,6 @@ class ZauthService extends Service
     **/
     public function boot()
     {
-
+		$this->commands(['zauth:publish' => Publish::class]);
     }
 }
