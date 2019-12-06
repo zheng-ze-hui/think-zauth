@@ -3,6 +3,7 @@
 namespace zauth;
 
 use think\Service;
+use zauth\command\Publish;
 
 class ZauthService extends Service
 {
