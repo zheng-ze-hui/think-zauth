@@ -14,7 +14,7 @@ class ZauthService extends Service
     public function register()
     {
         // 注册数据迁移服务
-        $this->app->register(\think\migration\Service::class);
+        // $this->app->register(\think\migration\Service::class);
     }
 
     /**
