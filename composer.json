@@ -1,5 +1,5 @@
 {
-    "name": "zheng-ze-hui/think-zauth",
+    "name": "think/think-zauth",
     "description": "An authorization library for Thinkphp6",
     "type": "library",
     "keywords": [
@@ -24,6 +24,20 @@
     "autoload": {
         "psr-4": {
             "zauth\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "zauth\\ZauthService"
+            ],
+            "config":{
+                "zauth": "src/config.php"
+            } 
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
