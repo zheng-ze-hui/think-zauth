@@ -33,7 +33,7 @@ class Publish extends Command
         if(!is_dir($destination)){
             mkdir($destination, 0755, true);
         }
-        $source = __DIR__.'/../../database/migrations/';
+        $source = __DIR__.'/../database/migrations/';
         $handle = dir($source);
         
         while($entry=$handle->read()) {   
