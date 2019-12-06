@@ -9,16 +9,23 @@
 // | Author: yunwuxin <448901948@qq.com>
 // +----------------------------------------------------------------------
 
-use think\Response;
-
-// /**
-//  * @param string $config
-//  * @return \think\Response
-//  */
-// function captcha($config = null): Response
-// {
-//     return Captcha::create($config);
-// }
+function copy_file()
+{
+	$destination = $this->app->getRootPath() . '/database/migrations/';
+    if(!is_dir($destination)){
+        mkdir($destination, 0755, true);
+    }
+    $source = __DIR__.'/../../database/migrations/';
+    $handle = dir($source);
+    
+    while($entry=$handle->read()) {   
+        if(($entry!=".")&&($entry!="..")){   
+            if(is_file($source.$entry)){
+                copy($source.$entry, $destination.$entry);   
+            }
+        }
+    }
+}
 
 // /**
 //  * @param $config
