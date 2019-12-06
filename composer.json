@@ -24,10 +24,7 @@
     "autoload": {
         "psr-4": {
             "zauth\\": "src/"
-        },
-        "files": [
-            "src/helper.php"
-        ]
+        }
     },
     "extra": {
         "think": {
@@ -36,7 +33,7 @@
             ],
             "config":{
                 "zauth": "src/config.php"
-            } 
+            }
         }
     }
 }
