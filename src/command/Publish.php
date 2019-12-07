@@ -43,6 +43,8 @@ class Publish extends Command
                 }
             }
         }
+
+        copy(__DIR__.'/../config.php', config_path().'zauth.php');
     }
 }
 
