@@ -5,4 +5,5 @@
 
 return [
 	'users_tb'               => 'users',
+	'roles_tb'               => 'roles',
 ];
