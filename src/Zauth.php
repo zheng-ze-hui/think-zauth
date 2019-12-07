@@ -1,11 +1,14 @@
 <?php
-/**
-
- **/
+//
+//
+//
 
 namespace zauth;
 
-class Tools{
+use think\Config;
+use think\facade\Db;
+
+class Zauth{
 	public function __construct(){
 
 	}
